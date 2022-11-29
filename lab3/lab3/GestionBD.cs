@@ -33,7 +33,7 @@ namespace lab3
 
             MySqlCommand commande = new MySqlCommand();
             commande.Connection = con;
-            commande.CommandText = "Select * from employe";
+            commande.CommandText = "Select matricule from employe";
 
             con.Open();
             MySqlDataReader r = commande.ExecuteReader();
@@ -43,8 +43,8 @@ namespace lab3
                 Employe em = new Employe()
                 {
                     Matricule = r.GetString("matricule"),
-                    Nom = r.GetString("nom"),
-                    Prenom = r.GetString("prenom"),
+                    //Nom = r.GetString("nom"),
+                    //Prenom = r.GetString("prenom"),
                 };
                 liste.Add(em);
             }

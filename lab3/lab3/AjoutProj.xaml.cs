@@ -30,6 +30,7 @@ namespace lab3
         public AjoutProj()
         {
             this.InitializeComponent();
+            CbEmploye.ItemsSource = GestionBD.getInstance().getEmploye();
         }
 
         private void btnAjoutProjet_Click(object sender, RoutedEventArgs e)
@@ -41,7 +42,7 @@ namespace lab3
             dateError.Visibility = Visibility.Collapsed;
             budgetError.Visibility = Visibility.Collapsed;
             descError.Visibility = Visibility.Collapsed;
-            //employeError.Visibility = Visibility.Collapsed;
+            employeError.Visibility = Visibility.Collapsed;
 
             if (tbNum.Text.Length > 14 || tbNum.Text == "")
             {
@@ -95,7 +96,7 @@ namespace lab3
                     DateDebut = cdp.Date.Value.ToString("yyyy-MM-dd"),
                     Budget = Int32.Parse(tbBudget.Text),
                     Description = tbDesc.Text,
-                    //Employe = tbEmploye.Text
+                    Employe = CbEmploye.SelectedItem.ToString(),
                 };
 
                 if (GestionBD.getInstance().ajouterProjet(pr) > 0)
@@ -112,9 +113,6 @@ namespace lab3
             }
         }
 
-        private void Employe_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Employe m = (Employe)Employe.SelectedItem;
-        }
+      
     }
 }
