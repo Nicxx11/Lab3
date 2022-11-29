@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lab3",
+    "\\lab3\\lab3"
   ],
-  "SelectedNode": "\\C:\\Users\\DJnic\\Source\\Repos\\Lab3",
+  "SelectedNode": "\\lab3\\lab3\\GestionBD.cs",
   "PreviewInSolutionExplorer": false
 }
