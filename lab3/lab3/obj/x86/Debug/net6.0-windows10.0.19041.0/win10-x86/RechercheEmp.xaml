@@ -1,8 +1,8 @@
-<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+﻿<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
 <!-- Licensed under the MIT License. See LICENSE in the project root for license information. -->
 
 <Page
-    x:Class="lab3.RechercheEmploye"
+    x:Class="lab3.RechercheEmp"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:lab3"
@@ -12,11 +12,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <AutoSuggestBox x:Name="autoSuggestBox" QueryIcon="Find"
-                PlaceholderText=""
-                TextChanged="autoSuggestBox_TextChanged"/>
+        <TextBox Text="Recherche un employer"/>
+        <TextBox x:ConnectionId='2' x:Name="tbRechercheEmp"
+                                                        />
 
 
-        <ListView x:Name="LvEmploye" ItemsSource="ListeEmploye"/>
+        <ListView x:ConnectionId='3' x:Name="LvEmploye" ItemsSource="ListeEmploye"/>
     </StackPanel>
 </Page>
+

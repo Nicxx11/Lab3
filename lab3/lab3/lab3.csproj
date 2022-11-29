@@ -12,9 +12,16 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="RechercheEmploye.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="AjoutEmp.xaml" />
     <None Remove="AjoutProj.xaml" />
+    <None Remove="RechercheEmp.xaml" />
     <None Remove="RechercheEmploye.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="RechercheEmploye.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,7 +50,7 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="RechercheEmploye.xaml">
+    <Page Update="RechercheEmp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

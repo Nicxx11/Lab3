@@ -36,7 +36,7 @@ namespace lab3
                     break;
                 case "RechEmp":
                     tblHeader.Text = "Recherche d'employé";
-                    //mainFrame.Navigate(typeof(Agenda));
+                    mainFrame.Navigate(typeof(RechercheEmp));
                     break;
                 case "RechProj":
                     tblHeader.Text = "Recherche de projet";

@@ -24,16 +24,17 @@ namespace lab3
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class RechercheEmploye : Page
+    public sealed partial class RechercheEmp : Page
     {
-        public RechercheEmploye()
+        public RechercheEmp()
         {
             this.InitializeComponent();
         }
 
-        private void autoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+
+        private void tbRechercheEmp_TextChanged(object sender, TextChangedEventArgs e)
         {
-            GestionBD.getInstance().recherche(autoSuggestBox.Text);
+            GestionBD.getInstance().recherche(tbRechercheEmp.Text);
         }
     }
 }

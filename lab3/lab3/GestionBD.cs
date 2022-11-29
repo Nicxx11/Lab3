@@ -132,5 +132,39 @@ namespace lab3
 
             return i;
         }
+
+        public void recherche(string texte)
+        {
+            MainWindow.ListeEmploye.Clear();
+
+
+
+            MySqlCommand commande = new MySqlCommand();
+            commande.Connection = con;
+            commande.CommandText = "Select * from employe where matricule = @texte or nom = @texte or prenom = @texte";
+
+
+
+            con.Open();
+            commande.Parameters.AddWithValue("@texte", texte);
+            MySqlDataReader r = commande.ExecuteReader();
+
+
+
+            while (r.Read())
+            {
+
+
+
+                MainWindow.ListeEmploye.Add(new Employe()
+                {
+                    Prenom = r.GetString(2),
+                    Nom = r.GetString(1),
+                    Matricule = r.GetString(0),
+                });
+            }
+            r.Close();
+            con.Close();
+        }
     }
 }
