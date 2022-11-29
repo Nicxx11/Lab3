@@ -7,6 +7,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,6 +25,9 @@ namespace lab3
     /// </summary>
     public sealed partial class MainWindow : Window
     {
+        internal static ObservableCollection<Projet> ListeProjet = new ObservableCollection<Projet>();
+        internal static ObservableCollection<Employe> ListeEmploye = new ObservableCollection<Employe>();
+
         public MainWindow()
         {
             this.InitializeComponent();

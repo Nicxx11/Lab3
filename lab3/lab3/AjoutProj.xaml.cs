@@ -41,7 +41,7 @@ namespace lab3
             dateError.Visibility = Visibility.Collapsed;
             budgetError.Visibility = Visibility.Collapsed;
             descError.Visibility = Visibility.Collapsed;
-            employeError.Visibility = Visibility.Collapsed;
+            //employeError.Visibility = Visibility.Collapsed;
 
             if (tbNum.Text.Length > 14 || tbNum.Text == "")
             {
@@ -95,7 +95,7 @@ namespace lab3
                     DateDebut = cdp.Date.Value.ToString("yyyy-MM-dd"),
                     Budget = Int32.Parse(tbBudget.Text),
                     Description = tbDesc.Text,
-                    Employe = tbEmploye.Text
+                    //Employe = tbEmploye.Text
                 };
 
                 if (GestionBD.getInstance().ajouterProjet(pr) > 0)
@@ -110,6 +110,11 @@ namespace lab3
                     numError.Text = "Numero de projet deja existant";
                 }
             }
+        }
+
+        private void Employe_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Employe m = (Employe)Employe.SelectedItem;
         }
     }
 }

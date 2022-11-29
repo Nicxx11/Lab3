@@ -14,7 +14,7 @@
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBlock Text="Entrez le numero du projet" FontSize="25" />
         <TextBox x:Name="tbNum" />
-        <TextBlock x:Name="numError" Foreground="Red" FontSize="15" Visibility="Collapsed" />
+        <TextBlock x:Name="numErr" Foreground="Red" FontSize="15" Visibility="Collapsed" />
 
         <TextBlock Text="Selectionez la date de debut du projet" FontSize="25" />
         <CalendarDatePicker x:Name="cdp" />
@@ -28,9 +28,7 @@
         <TextBox x:Name="tbDesc"/>
         <TextBlock x:Name="descError" Foreground="red" FontSize="15" Visibility="Collapsed" />
 
-        <TextBlock Text="Entrez le matricule de l'employé assigné au projet" FontSize="25" />
-        <TextBox x:Name="tbEmploye"/>
-        <TextBlock x:Name="employeError" Foreground="Red" FontSize="15" Visibility="Collapsed" />
+        <ComboBox x:Name="Employe" ItemsSource="{MainWindow.ListeEmploye}"/>
 
         <Button Content="Ajouter" x:Name="btnAjoutProjet" Click="btnAjoutProjet_Click" />
         <TextBlock x:Name="projetValide" Text="Le projet a bien été ajouté à la BD!" Visibility="Collapsed" Foreground="Green" />
