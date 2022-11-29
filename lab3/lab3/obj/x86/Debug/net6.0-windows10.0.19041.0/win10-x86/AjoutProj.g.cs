@@ -66,7 +66,7 @@ namespace lab3
                 break;
             case 10: // AjoutProj.xaml line 32
                 {
-                    this.tbEmploye = global::WinRT.CastExtensions.As<global::Microsoft.UI.Xaml.Controls.TextBox>(target);
+                    this.CbEmploye = global::WinRT.CastExtensions.As<global::Microsoft.UI.Xaml.Controls.ComboBox>(target);
                 }
                 break;
             case 11: // AjoutProj.xaml line 33

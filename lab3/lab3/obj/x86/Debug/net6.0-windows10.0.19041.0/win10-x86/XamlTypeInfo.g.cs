@@ -224,7 +224,7 @@ namespace lab3.lab3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[37];
+            _typeNameTable = new string[38];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -262,8 +262,9 @@ namespace lab3.lab3_XamlTypeInfo
             _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.Control";
             _typeNameTable[35] = "lab3.MainWindow";
             _typeNameTable[36] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[37] = "lab3.RechercheEmp";
 
-            _typeTable = new global::System.Type[37];
+            _typeTable = new global::System.Type[38];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -301,6 +302,7 @@ namespace lab3.lab3_XamlTypeInfo
             _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
             _typeTable[35] = typeof(global::lab3.MainWindow);
             _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[37] = typeof(global::lab3.RechercheEmp);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -344,6 +346,7 @@ namespace lab3.lab3_XamlTypeInfo
         private object Activate_31_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
         private object Activate_33_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_35_MainWindow() { return new global::lab3.MainWindow(); }
+        private object Activate_37_RechercheEmp() { return new global::lab3.RechercheEmp(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -614,6 +617,13 @@ namespace lab3.lab3_XamlTypeInfo
 
             case 36:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::lab3.lab3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 37:   //  lab3.RechercheEmp
+                userType = new global::lab3.lab3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_37_RechercheEmp;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

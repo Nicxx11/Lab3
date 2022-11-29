@@ -33,7 +33,7 @@ namespace lab3
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 1.0.0.0")]
         private global::Microsoft.UI.Xaml.Controls.TextBlock descError; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 1.0.0.0")]
-        private global::Microsoft.UI.Xaml.Controls.TextBox tbEmploye; 
+        private global::Microsoft.UI.Xaml.Controls.ComboBox CbEmploye; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 1.0.0.0")]
         private global::Microsoft.UI.Xaml.Controls.TextBlock employeError; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 1.0.0.0")]

@@ -30,6 +30,7 @@ namespace lab3
         public AjoutProj()
         {
             this.InitializeComponent();
+            CbEmploye.ItemsSource = GestionBD.getInstance().getEmploye();
         }
 
         private void btnAjoutProjet_Click(object sender, RoutedEventArgs e)
@@ -95,7 +96,7 @@ namespace lab3
                     DateDebut = cdp.Date.Value.ToString("yyyy-MM-dd"),
                     Budget = Int32.Parse(tbBudget.Text),
                     Description = tbDesc.Text,
-                    Employe = tbEmploye.Text
+                    Employe = CbEmploye.SelectedItem.ToString(),
                 };
 
                 if (GestionBD.getInstance().ajouterProjet(pr) > 0)
@@ -111,5 +112,7 @@ namespace lab3
                 }
             }
         }
+
+      
     }
 }

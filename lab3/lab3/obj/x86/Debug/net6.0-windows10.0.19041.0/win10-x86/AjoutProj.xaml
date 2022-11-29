@@ -28,9 +28,9 @@
         <TextBox x:ConnectionId='8' x:Name="tbDesc"/>
         <TextBlock x:ConnectionId='9' x:Name="descError" Foreground="red" FontSize="15" Visibility="Collapsed" />
 
-        <TextBlock Text="Entrez le matricule de l'employ� assign� au projet" FontSize="25" />
-        <TextBox x:ConnectionId='10' x:Name="tbEmploye"/>
-        <TextBlock x:ConnectionId='11' x:Name="employeError" Foreground="Red" FontSize="15" Visibility="Collapsed" />
+        <TextBlock Text="Selectionner un employe" FontSize="25" />
+        <ComboBox x:ConnectionId='10' x:Name="CbEmploye" />
+        <TextBlock x:ConnectionId='11' x:Name="employeError" Foreground="red" FontSize="15" Visibility="Collapsed" />
 
         <Button x:ConnectionId='12' Content="Ajouter" x:Name="btnAjoutProjet"                              />
         <TextBlock x:ConnectionId='13' x:Name="projetValide" Text="Le projet a bien �t� ajout� � la BD!" Visibility="Collapsed" Foreground="Green" />
