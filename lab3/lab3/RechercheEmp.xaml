@@ -11,12 +11,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <TextBox Text="Recherche un employer"/>
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <TextBlock Text="Rechercher un employer"/>
         <TextBox x:Name="tbRechercheEmp"
                 TextChanged="tbRechercheEmp_TextChanged"/>
 
 
-        <ListView x:Name="LvEmploye" ItemsSource="ListeEmploye"/>
+        <ListView x:Name="LvEmploye"/>
     </StackPanel>
 </Page>

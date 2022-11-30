@@ -33,7 +33,7 @@ namespace lab3
 
             MySqlCommand commande = new MySqlCommand();
             commande.Connection = con;
-            commande.CommandText = "Select matricule from employe";
+            commande.CommandText = "Select nom,prenom from employe";
 
             con.Open();
             MySqlDataReader r = commande.ExecuteReader();
@@ -42,9 +42,9 @@ namespace lab3
 
                 Employe em = new Employe()
                 {
-                    Matricule = r.GetString("matricule"),
-                    //Nom = r.GetString("nom"),
-                    //Prenom = r.GetString("prenom"),
+                    //Matricule = r.GetString("matricule"),
+                    Nom = r.GetString("nom"),
+                    Prenom = r.GetString("prenom"),
                 };
                 liste.Add(em);
             }
@@ -133,11 +133,39 @@ namespace lab3
             return i;
         }
 
+        public ObservableCollection<Employe> rechercheEmploye(string texte)
+        {
+            ObservableCollection<Employe> liste = new ObservableCollection<Employe>();
+
+            MySqlCommand commande = new MySqlCommand();
+            commande.Connection = con;
+            commande.CommandText = "Select * from employe where matricule like @texte or nom like @texte or prenom like @texte";
+
+            con.Open();
+            commande.Parameters.AddWithValue("@texte", "%"+texte+"%");
+            MySqlDataReader r = commande.ExecuteReader();
+
+            while (r.Read())
+            {
+
+                Employe em = new Employe()
+                {
+                    Matricule = r.GetString("matricule"),
+                    Nom = r.GetString("nom"),
+                    Prenom = r.GetString("prenom"),
+                };
+                liste.Add(em);
+            }
+            r.Close();
+            con.Close();
+
+            return liste;
+
+        }
+
         public void recherche(string texte)
         {
-            MainWindow.ListeEmploye.Clear();
-
-
+            
 
             MySqlCommand commande = new MySqlCommand();
             commande.Connection = con;

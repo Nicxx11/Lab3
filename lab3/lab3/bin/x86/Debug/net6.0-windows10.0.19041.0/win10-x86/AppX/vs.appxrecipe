@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-29T15:45:02.213</Modified>
+      <Modified>2022-11-30T14:07:03.906</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-29T15:45:01.966</Modified>
+      <Modified>2022-11-30T14:07:03.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.runtimeconfig.json">
       <PackagePath>lab3.runtimeconfig.json</PackagePath>
-      <Modified>2022-11-29T15:23:44.361</Modified>
+      <Modified>2022-11-30T13:42:31.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.dll">
       <PackagePath>lab3.dll</PackagePath>
-      <Modified>2022-11-29T15:45:01.778</Modified>
+      <Modified>2022-11-30T14:07:03.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>lab3.exe</PackagePath>
-      <Modified>2022-11-29T15:45:01.798</Modified>
+      <Modified>2022-11-30T14:07:03.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.deps.json">
       <PackagePath>lab3.deps.json</PackagePath>
-      <Modified>2022-11-29T15:37:35.635</Modified>
+      <Modified>2022-11-30T13:42:31.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.netcore.app.runtime.win-x86\6.0.11\runtimes\win-x86\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

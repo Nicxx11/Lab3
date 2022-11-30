@@ -29,12 +29,13 @@ namespace lab3
         public RechercheEmp()
         {
             this.InitializeComponent();
+            
         }
 
 
         private void tbRechercheEmp_TextChanged(object sender, TextChangedEventArgs e)
         {
-            GestionBD.getInstance().recherche(tbRechercheEmp.Text);
+            LvEmploye.ItemsSource= GestionBD.getInstance().rechercheEmploye(tbRechercheEmp.Text);
         }
     }
 }
