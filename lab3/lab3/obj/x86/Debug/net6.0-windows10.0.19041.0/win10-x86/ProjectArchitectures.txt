@@ -1,1 +1,1 @@
-C:\Users\mathi\source\repos\Lab3\lab3\lab3\lab3.csproj;x86
+C:\Users\DJnic\source\repos\Lab3\lab3\lab3\lab3.csproj;x86

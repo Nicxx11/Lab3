@@ -10,34 +10,34 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>912add00-a4a3-4190-a345-2a35ea3af85c</PackageIdentityName>
     <PackageIdentityPublisher>CN=1998072</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\DJnic\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
+    <LayoutDir>C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.runtimeconfig.json">
       <PackagePath>lab3.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.dll">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.dll">
       <PackagePath>lab3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>lab3.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.deps.json">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\lab3.deps.json">
       <PackagePath>lab3.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.netcore.app.runtime.win-x86\6.0.11\runtimes\win-x86\lib\net6.0\Microsoft.CSharp.dll">
@@ -799,25 +799,25 @@
     <AppxPackagedFile Include="C:\Users\mathi\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mathi\source\repos\Lab3\lab3\lab3\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DJnic\source\repos\Lab3\lab3\lab3\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

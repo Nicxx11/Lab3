@@ -65,13 +65,13 @@ namespace lab3
             else if (Int32.Parse(tbBudget.Text) > 100000)
             {
                 budgetError.Visibility = Visibility.Visible;
-                numError.Text = "Le budget doit être sous 100 000$";
+                budgetError.Text = "Le budget doit être sous 100 000$";
                 erreur = true;
             }
             else if (tbBudget.Text.Length > 6)
             {
                 budgetError.Visibility = Visibility.Visible;
-                numError.Text = "Le budget doit être sous 100 000$";
+                budgetError.Text = "Le budget doit être sous 100 000$";
                 erreur = true;
             }
             if (cdp.Date.Value.ToString() == "")
