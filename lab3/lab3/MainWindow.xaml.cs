@@ -15,6 +15,7 @@ namespace lab3
         internal static ObservableCollection<Projet> ListeProjet = new ObservableCollection<Projet>();
         internal static ObservableCollection<Employe> ListeEmploye = new ObservableCollection<Employe>();
 
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -40,7 +41,7 @@ namespace lab3
                     break;
                 case "RechProj":
                     tblHeader.Text = "Recherche de projet";
-                    //mainFrame.Navigate(typeof(Agenda));
+                    mainFrame.Navigate(typeof(RechercheProj));
                     break;
             }
         }

@@ -1231,3 +1231,8 @@ C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.1904
 C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheEmp.xaml
 C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheEmp.xbf
 C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheEmp.xbf
+C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheProj.g.i.cs
+C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheProj.g.cs
+C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheProj.xaml
+C:\Users\mathi\source\repos\Lab3\lab3\lab3\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheProj.xbf
+C:\Users\mathi\source\repos\Lab3\lab3\lab3\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\RechercheProj.xbf

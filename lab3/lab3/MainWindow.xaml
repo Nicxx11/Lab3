@@ -28,6 +28,8 @@
             <NavigationViewItem Name="RechProj" Content="Recherche projet" Icon="Folder"/>
         </NavigationView.MenuItems>
 
+        <ListView x:Name="lvProjet" />
+
         <Frame x:Name="mainFrame" />
 
     </NavigationView>

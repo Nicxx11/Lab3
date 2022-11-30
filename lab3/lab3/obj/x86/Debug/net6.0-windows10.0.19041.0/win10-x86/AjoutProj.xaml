@@ -33,7 +33,7 @@
         <TextBlock x:ConnectionId='11' x:Name="employeError" Foreground="red" FontSize="15" Visibility="Collapsed" />
 
         <Button x:ConnectionId='12' Content="Ajouter" x:Name="btnAjoutProjet"                              />
-        <TextBlock x:ConnectionId='13' x:Name="projetValide" Text="Le projet a bien �t� ajout� � la BD!" Visibility="Collapsed" Foreground="Green" />
+        <TextBlock x:ConnectionId='13' x:Name="projetValide" Text="Le projet a bien ete ajoute a la BD!" Visibility="Collapsed" Foreground="Green" />
     </StackPanel>
 </Page>
 

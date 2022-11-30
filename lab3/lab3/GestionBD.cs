@@ -163,36 +163,35 @@ namespace lab3
 
         }
 
-        public void recherche(string texte)
+        public ObservableCollection<Projet> rechercheProj(string texte)
         {
-            
+            ObservableCollection<Projet> liste = new ObservableCollection<Projet>();
 
             MySqlCommand commande = new MySqlCommand();
             commande.Connection = con;
-            commande.CommandText = "Select * from employe where matricule = @texte or nom = @texte or prenom = @texte";
-
-
+            commande.CommandText = "Select * from projet where numero like @texte or debut like @texte or employe like @texte or budget like @texte";
 
             con.Open();
-            commande.Parameters.AddWithValue("@texte", texte);
+            commande.Parameters.AddWithValue("@texte", "%" + texte + "%");
             MySqlDataReader r = commande.ExecuteReader();
-
-
 
             while (r.Read())
             {
 
-
-
-                MainWindow.ListeEmploye.Add(new Employe()
+                Projet pr = new Projet()
                 {
-                    Prenom = r.GetString(2),
-                    Nom = r.GetString(1),
-                    Matricule = r.GetString(0),
-                });
+                    Numero = r.GetString("numero"),
+                    DateDebut = r.GetString("debut"),
+                    Budget = r.GetInt32("budget"),
+                    Employe = r.GetString("employe")
+                };
+                liste.Add(pr);
             }
             r.Close();
             con.Close();
+
+            return liste;
+
         }
     }
 }
