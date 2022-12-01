@@ -19,6 +19,8 @@ namespace lab3
         public MainWindow()
         {
             this.InitializeComponent();
+            tblHeader.Text = "Liste des projets";
+            mainFrame.Navigate(typeof(ListeProjet));
         }
 
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)

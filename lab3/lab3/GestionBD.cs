@@ -54,6 +54,37 @@ namespace lab3
             return liste;
 
         }
+
+        public ObservableCollection<Projet> getProjet()
+        {
+            ObservableCollection<Projet> liste = new ObservableCollection<Projet>();
+
+            MySqlCommand commande = new MySqlCommand();
+            commande.Connection = con;
+            commande.CommandText = "Select * from projet";
+
+            con.Open();
+            MySqlDataReader r = commande.ExecuteReader();
+            while (r.Read())
+            {
+
+                Projet pr = new Projet()
+                {
+                    Numero = r.GetString("numero"),
+                    DateDebut = r.GetString("debut"),
+                    Budget = r.GetInt32("budget"),
+                    Description = r.GetString("description"),
+                    Employe = r.GetString("employe")
+                };
+                liste.Add(pr);
+            }
+            r.Close();
+            con.Close();
+
+            return liste;
+
+        }
+
         public int ajouterEmploye(Employe em)
         {
             string matricule = em.Matricule;
